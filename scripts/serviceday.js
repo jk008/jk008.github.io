@@ -1,8 +1,13 @@
-const oneDay = 60 * 60 * 24 * 1000;
+const ONE_DAY = 60 * 60 * 24 * 1000;
 
 document.addEventListener("DOMContentLoaded", function () {
   let now = new Date();
-  setDays("days_daifugo", new Date(2021, 7, 30), now);
+  const json = JSON.parse(document.getElementById("game_dates").textContent);
+
+  for (const i in json) {
+    const data = json[i];
+    setDays(data.id, data.release, now);
+  }
 });
 
 function setDays(id, start, end) {
@@ -11,5 +16,5 @@ function setDays(id, start, end) {
 }
 
 function getServiceDays(start, end) {
-  return parseInt((end - start) / oneDay);
+  return parseInt((end - start) / ONE_DAY);
 }
