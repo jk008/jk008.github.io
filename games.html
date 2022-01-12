@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script id="game_dates" type="application/json">
+      [
+        {
+          "id": "days_daifugo",
+          "release": 1630249200000
+        }
+      ]
+    </script>
+    <script src="scripts/serviceday.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Games</h2>
+      <table class="table">
+        <tr>
+          <th>Title</th>
+          <th>Company</th>
+          <th>Release</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Puzzle Popo</td>
+          <td>Neptune</td>
+          <td>2018-04-01</td>
+          <td>종료</td>
+        </tr>
+        <tr>
+          <td>
+            <span title="Gekitekisaihai! Probaseball Reversal">劇的采配！プロ野球リバーサル</span>
+          </td>
+          <td>Neptune</td>
+          <td>2019-11-07</td>
+          <td>2021-12-16 <span id="days_mpro" class="days ended">(770일)</span></td>
+        </tr>
+        <tr>
+          <td>Line Pixar Tower</td>
+          <td>Magnet</td>
+          <td>2019-08-16</td>
+          <td>2021-09-28 <span id="days_lt" class="days ended">(774일)</span></td>
+        </tr>
+        <tr>
+          <td>My Pet Story(家园萌汪)</td>
+          <td>Magnet</td>
+          <td>2021-01-21</td>
+          <td>종료</td>
+        </tr>
+        <tr>
+          <td><span title="라인 초대부호">Line 超大富豪</span></td>
+          <td>Magnet</td>
+          <td>2021-08-30</td>
+          <td><span id="days_daifugo" class="days"></span></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
